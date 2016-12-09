@@ -1,0 +1,20 @@
+{
+  "name": "bitcoin-wallet-microservice",
+  "version": "1.0.0",
+  "main": "server/service.js",
+  "scripts": {
+    "start": "node bin/run.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rogerio Bastos (rogbas)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "moment": "^2.16.0",
+    "superagent": "^2.3.0"
+  },
+  "bin": {
+    "bitcoin-wallet-microservice": "run.js"
+  },
+  "description": ""
+}
