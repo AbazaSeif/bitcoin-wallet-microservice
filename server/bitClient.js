@@ -10,7 +10,7 @@ var bitClient = new BitClient({
   baseUrl: BWS_INSTANCE_URL,
   verbose: true,
 });
-var fileName = 'rogbot-wallet.dat';
+var fileName ='';
 var str = fs.readFileSync(fileName, {
   encoding: 'utf8'
 });
@@ -19,7 +19,7 @@ console.log(`Connecting to the ${networkName} network on the blockchain`);
 console.log("Importing bot wallet");
 
 try {
-  bitClient.import(str, {}, 'Rogbot1337');
+  bitClient.import(str, {}, '');
 } catch (err) {
   console.log(`Could not import the wallet from ${fileName}`);
   console.log(err);
