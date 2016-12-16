@@ -12,7 +12,9 @@ var bitClient = new BitClient({
   baseUrl: BWS_INSTANCE_URL,
   verbose: true,
 });
+
 var fileName = config.walletFile;
+
 var str = fs.readFileSync(fileName, {
   encoding: 'utf8'
 });
@@ -21,7 +23,9 @@ console.log(`Connecting to the ${networkName} network on the blockchain`);
 console.log("Importing bot wallet");
 
 try {
+
   bitClient.import(str, {}, config.walletPassword);
+
 } catch (err) {
   console.log(`Could not import the wallet from ${fileName}`);
   console.log(err);
